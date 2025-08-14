@@ -1,6 +1,5 @@
 <?php
-
-// Условия, тернарный оператор и switch
+// ДЗ 1
 define('LOGIN', 'admin');
 define('PASSWORD', 'secret123');
 
@@ -15,12 +14,36 @@ elseif ($tmp_login != LOGIN) {
 elseif ($tmp_login == LOGIN && $tmp_password == PASSWORD) {
     echo 'Auth success';
 }
+?>
 
+<br /><br />
+
+<?php
+// ДЗ 2
 $isStatus  = false;
 $statusResult = ($isStatus) ? '43224656' : '98645623';
 
 echo $statusResult;
-echo '<pre>';
-echo '</pre>';
 
+?>
+
+<br /><br />
+
+<?php
+// ДЗ 3
+$typeCar = 'BMW';
+
+switch ($typeCar) {
+    case 'BMW':
+        echo 'Selected is a very good car';
+        break;
+    case 'Toyota':
+        echo 'Toyota is a very reliable car!';
+        break;
+    case 'Lada':
+        echo 'Dont buy these cars!';
+        break;
+    default:
+        echo 'Car not found';
+}
 ?>
